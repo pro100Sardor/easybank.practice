@@ -1,0 +1,9 @@
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navbar > *:not(:last-child) {
+  margin-right: 150px;
+}
