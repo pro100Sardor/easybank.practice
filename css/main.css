@@ -397,6 +397,10 @@ body {
   font-family: "Public Sans", "Arial", sans-serif;
 }
 
+.page__body {
+  margin-top: 75px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
