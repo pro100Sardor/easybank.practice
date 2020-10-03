@@ -401,6 +401,12 @@ body {
   margin-top: 75px;
 }
 
+@media only screen and (max-width: 985px) {
+  .page__body {
+    margin-top: 147px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

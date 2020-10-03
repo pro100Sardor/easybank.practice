@@ -1,3 +1,9 @@
 .page__body {
   margin-top: 75px;
 }
+
+@include breakpoint-down (985px) {
+  .page__body {
+    margin-top: 147px;
+  }
+}
