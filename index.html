@@ -11,30 +11,42 @@
   <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
-<hader class="site-header">
+<header class="site-header">
   <nav class="container header-navbar">
-    <a class="logo-link" href="#">
+    <a class="header-navbar__logo-link logo-link" href="#">
       <img class="logo-link__logo-image" src="./img/logo.svg" alt="logo of easybank" width="139" height="20">
     </a>
-    <ul class="header-features-list">
-      <li class="header-features-list__item">
+    <ul class="header-navbar__features-list header-features-list">
+      <li class="header-navbar__features-item header-features-list__item">
         <a class="header-features-list__link" href="#" aria-label="go to home page">home</a>
       </li>
-      <li class="header-features-list__item">
+      <li class="header-navbar__features-item header-features-list__item">
         <a class="header-features-list__link" href="#" aria-label="go to about page">about</a>
       </li>
-      <li class="header-features-list__item">
+      <li class="header-navbar__features-item header-features-list__item">
         <a class="header-features-list__link" href="#" aria-label="go to contacts page">contact</a>
       </li>
-      <li class="header-features-list__item">
+      <li class="header-navbar__features-item header-features-list__item">
         <a class="header-features-list__link" href="#" aria-label="go to blog page">blog</a>
       </li>
       <li class="header-features-list__item">
         <a class="header-features-list__link" href="#" aria-label="go to careers page">careers</a>
       </li>
     </ul>
-    <a class="request-button" href="#" aria-label="Go to the request invite page" title="Request Invite">request invite</a>
+    <a class="request-button" href="#" aria-label="Go to the request invite page" title="Request Invite">Request Invite</a>
+    <span class="burger-menyu" onclick="menyuToggle(this)">
+      <span class="burger-menyu__top-decoration"></span>
+      <span class="burger-menyu__middle-decoration"></span>
+      <span class="burger-menyu__bottom-decoration"></span>
+    </span>
   </nav>
-</hader>
+</header>
+
+<script> </script>
+<script>
+  function menyuToggle(x) {
+    x.classList.toggle("change");
+  }
+  </script>
 </body>
 </html>

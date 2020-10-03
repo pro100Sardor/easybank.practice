@@ -4,6 +4,21 @@
   align-items: center;
 }
 
-.header-navbar > *:not(:last-child) {
-  margin-right: 150px;
+.header-navbar__logo-link, .header-navbar__features-list {
+  margin-right: 50px;
+}
+
+@include breakpoint-down (985px) {
+  .header-navbar {
+    flex-wrap: wrap;
+    padding-top: 28px;
+  }
+
+  .header-navbar__features-list {
+    margin-right: 0px;
+  }
+
+  .header-navbar__features-list {
+    order: 3;
+  }
 }
