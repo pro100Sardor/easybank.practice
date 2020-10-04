@@ -3,4 +3,17 @@
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 999;
+ }
+
+ @include breakpoint-down (985px) {
+  .site-header {
+    position: static;
+  }
+ }
+
+ @include breakpoint-down (400px) {
+  .site-header {
+    position: static;
+  }
  }

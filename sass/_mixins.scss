@@ -19,3 +19,38 @@
 }
 
 // media screens mixins ended
+
+// list by default padding and margin loss styles started
+
+@mixin menyu-list {
+  list-style-type: none;
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  padding-left: 0;
+}
+
+// list by default padding and margin loss styles ended
+
+// nailing to correct the top and bottom margins of the headings started
+
+  @mixin h-m-control ($top, $bottom) {
+    margin: {
+      top: $top;
+      bottom: $bottom;
+    }
+  }
+
+// nailing to correct the top and bottom margins of the headings ended
+
+// nailing to correct the top and bottom margins of the headings started
+
+@mixin p-m-control ($top, $bottom) {
+  margin: {
+    top: $top;
+    bottom: $bottom;
+  }
+}
+
+// nailing to correct the top and bottom margins of the headings ended

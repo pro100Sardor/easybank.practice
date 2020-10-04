@@ -1,9 +1,20 @@
 .page__body {
   margin-top: 75px;
+  overflow: hidden;
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 @include breakpoint-down (985px) {
   .page__body {
-    margin-top: 147px;
+    margin-top: 0;
+  }
+}
+
+@include breakpoint-down (400px) {
+  .page__body {
+    margin-top: 0;
   }
 }

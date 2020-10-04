@@ -1,7 +1,10 @@
 .request-button {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   vertical-align: baseline;
   max-width: 163px;
+  min-width: 163px;
   border-radius: 22px;
   background-image: $btn-bg-color;
   text-decoration: none;
@@ -13,21 +16,32 @@
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
-
   padding: {
     top: 8px;
     bottom: 8px;
     left: 33px;
     right: 37px;
   }
-
   transition: opacity 0.2s ease;
 
-  &:hover {
-    opacity: 0.6;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover::after {
+    opacity: 0.4;
   }
 
   &:active {
-    opacity: 0.4;
+    opacity: 0.6;
   }
 }
