@@ -836,4 +836,93 @@ body {
     text-align: center;
   }
 }
+
+.benefits-section {
+  background-color: #F4F5F7;
+}
+
+.benefits-section__question-answer {
+  min-width: 635px;
+  max-width: 635px;
+}
+
+.benefits-section__question {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.7px;
+  color: #2D314D;
+}
+
+.benefits-section__answer {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+}
+
+.benefits-list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits-list__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.benefits-list__item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 40px;
+  background-color: #F4F5F7;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.benefits-list__online-item::before {
+  background-image: url("../img/online.svg");
+}
+
+.benefits-list__budgeting-item::before {
+  background-image: url("../img/budgeting.svg");
+}
+
+.benefits-list__onboarding-item::before {
+  background-image: url("../img/onboarding.svg");
+}
+
+.benefits-list__api-item::before {
+  background-image: url("../img/api.svg");
+}
+
+.benefits-list__name {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.benefit-list__description {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597A5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+.benefits-list {
+  @include menyu-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-list__item {
+  flex-shrink: 0;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+    background-color: #F4F5F7;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+@each $name in online, budgeting, onboarding, api {
+  .benefits-list__#{$name}-item {
+    &::before {
+      background-image: url("../img/#{$name}.svg");
+    }
+  }
+}
+
+.benefits-list__name {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+  @include h-m-control (0, 26px);
+}
+
+.benefit-list__description {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597A5;
+  @include p-m-control (0, 0);
+}
